@@ -1,0 +1,11 @@
+.idea
+*.pyc
+**__pycache__
+*.egg-info
+.direnv
+.envrc
+feature_repo/online_store.db
+feature_repo/registry.db
+output
+.env
+.python-version
