@@ -39,15 +39,15 @@ class Client():
             logging.error("Exception: {}".format(repr(exception)))
             raise
 
-
     def client(self):
         return self._client
 
-
     def connect(self, options=flight.FlightCallOptions(headers=[])):
+        """
+        Authenticate and connect to a Dremio host
+        """
         self._bearer_token = self.client().authenticate_basic_token(self._username, self._password, options)
         logging.info('Authentication was successful')
-
 
     def execute_query(self, query="", options=flight.FlightCallOptions(headers=[])):
         flight_desc = flight.FlightDescriptor.for_command(query)

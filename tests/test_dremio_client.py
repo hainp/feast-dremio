@@ -1,7 +1,7 @@
-import argparse
 import os
 
 from feast_dremio.client import Client
+
 
 def test_dremio_client_e2e():
     user = os.getenv('DREMIO_USER')
