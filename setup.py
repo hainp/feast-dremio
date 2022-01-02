@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-NAME = "iceshard"
+NAME = "feast_dremio"
 REQUIRES_PYTHON = ">=3.7.0"
 
 setup(
